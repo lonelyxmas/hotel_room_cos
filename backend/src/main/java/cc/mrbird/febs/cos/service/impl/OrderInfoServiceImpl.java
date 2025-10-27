@@ -93,7 +93,7 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
             throw new FebsException("结束时间不能大于开始");
         }
 
-        orderInfo.setOrderStatus("1");
+        orderInfo.setOrderStatus("0");
         orderInfo.setRecedeFlag("0");
         orderInfo.setCreateDate(DateUtil.formatDateTime(new Date()));
 

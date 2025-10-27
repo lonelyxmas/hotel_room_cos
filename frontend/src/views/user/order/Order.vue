@@ -65,6 +65,8 @@
         <template slot="operation" slot-scope="text, record">
           <a-icon type="file-search" @click="orderViewOpen(record)" title="详 情"></a-icon>
           <a-icon v-if="record.orderStatus == 1 && record.recedeFlag == 0 && record.evaluateId == null" type="pushpin" @click="handleorderEvaluateOpen(record)" title="评 价" style="margin-left: 15px"></a-icon>
+          <a-icon v-if="record.orderStatus == 0" type="alipay" @click="pay(record)" title="支 付" style="margin-left: 15px"></a-icon>
+          <a-icon v-if="record.orderStatus != -1 && record.evaluateId == null" type="issues-close" @click="returnOrder(record)" title="取 消" style="margin-left: 15px"></a-icon>
         </template>
       </a-table>
     </div>
@@ -223,6 +225,8 @@ export default {
         dataIndex: 'orderStatus',
         customRender: (text, row, index) => {
           switch (text) {
+            case '-1':
+              return <a-tag color="red">已取消</a-tag>
             case '0':
               return <a-tag>待付款</a-tag>
             case '1':
@@ -252,6 +256,31 @@ export default {
     this.fetch()
   },
   methods: {
+    returnOrder (row) {
+      this.$get(`/cos/order-info/return`, {
+        orderCode: row.code
+      }).then((r) => {
+        this.$message.success('取消成功')
+        this.fetch()
+      })
+    },
+    pay (row) {
+      let data = { outTradeNo: row.code, subject: `${row.code}费用`, totalAmount: row.totalPrice, body: '' }
+      this.$post('/cos/pay/alipay', data).then((r) => {
+        // console.log(r.data.msg)
+        // 添加之前先删除一下，如果单页面，页面不刷新，添加进去的内容会一直保留在页面中，二次调用form表单会出错
+        const divForm = document.getElementsByTagName('div')
+        if (divForm.length) {
+          document.body.removeChild(divForm[0])
+        }
+        const div = document.createElement('div')
+        div.innerHTML = r.data.msg // data就是接口返回的form 表单字符串
+        // console.log(div.innerHTML)
+        document.body.appendChild(div)
+        document.forms[0].setAttribute('target', '_self') // 新开窗口跳转
+        document.forms[0].submit()
+      })
+    },
     orderComplete (row) {
       this.$get(`/cos/order-info/audit`, {
         'orderCode': row.code,

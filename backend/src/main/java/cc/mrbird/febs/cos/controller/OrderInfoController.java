@@ -5,6 +5,7 @@ import cc.mrbird.febs.common.utils.R;
 import cc.mrbird.febs.cos.entity.OrderInfo;
 import cc.mrbird.febs.cos.service.IOrderInfoService;
 import cn.hutool.core.date.DateUtil;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -120,6 +121,17 @@ public class OrderInfoController {
     @GetMapping("/detail/{id}")
     public R detail(@PathVariable("id") Integer id) {
         return R.ok(orderInfoService.selectDetailById(id));
+    }
+
+    /**
+     * 退订
+     *
+     * @param orderCode 订单编号
+     * @return 订单信息
+     */
+    @GetMapping("/return")
+    public R returnOrder(String orderCode) {
+        return R.ok(orderInfoService.update(Wrappers.<OrderInfo>lambdaUpdate().set(OrderInfo::getOrderStatus, "-1").eq(OrderInfo::getCode, orderCode)));
     }
 
     /**

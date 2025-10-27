@@ -23,32 +23,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b51975f-5e37-45a1-bd9d-0f3c12f944d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/manage/room/Rent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/manage/room/RentAdd.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/manage/room/RentEdit.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/manage/room/RentView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/controller/RoomInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/controller/RoomInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/controller/UserInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/CommodityInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/CommodityInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/DeptInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/DeptInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/OrderEvaluate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/OrderEvaluate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/OrderInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/OrderInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/PositionInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/PositionInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/PurchaseRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/PurchaseRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/RoomInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/RoomInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/RoomType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/RoomType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/StaffInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/StaffInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/service/IRoomInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/service/IRoomInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/service/impl/RoomInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/service/impl/RoomInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/system/domain/UserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/system/domain/UserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/system/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/system/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/common/config/AlipayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/common/utils/Alipay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/controller/PayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/entity/AlipayBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/service/PayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/service/impl/PayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/resources/config/alipay.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/user/pay/Pay.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.idea/libraries/Maven__cn_hutool_hutool_all_5_5_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/febs_shiro_jwt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/febs_shiro_jwt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/service/impl/OrderInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/java/cc/mrbird/febs/cos/service/impl/OrderInfoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/main/resources/mapper/cos/RoomInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/main/resources/mapper/cos/RoomInfoMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/login/Regist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login/Regist.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/manage/staff/Staff.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/manage/staff/Staff.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/user/personal/Personal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/personal/Personal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/manage/component/work/Work.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/manage/component/work/Work.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/manage/order/Order.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/manage/order/Order.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/user/order/Order.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/order/Order.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,28 +69,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Project/酒店客房管理系统/hotel_room_cos/frontend/src/views/manage/room&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "G:/Project/酒店客房管理系统/hotel_room_cos/frontend/src/views/user",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\Project\酒店客房管理系统\hotel_room_cos\frontend\src\views\manage\room" />
-      <recent name="G:\Project\租车系统\vehicle_rent\frontend\src\views\manage\shop" />
-      <recent name="G:\Project\租车系统\vehicle_rent\frontend\src\views\manage\Brand" />
-      <recent name="G:\Project\药品销售平台\drug_sales\frontend\src\views\manage\inventory" />
-      <recent name="G:\Project\药品销售平台\drug_sales\frontend\src\utils" />
+      <recent name="G:\Project\酒店客房管理系统\hotel_room_cos\frontend\src\views\user" />
+      <recent name="G:\Project\酒店客房管理系统\hotel_room_cos\frontend\src\views\user\scenic" />
+      <recent name="G:\Project\酒店客房管理系统\hotel_room_cos\frontend\src\views\manage" />
+      <recent name="G:\Project\酒店客房管理系统\hotel_room_cos\frontend\src\views\manage\component\work" />
+      <recent name="G:\Project\酒店客房管理系统\hotel_room_cos\frontend\src\views\user\record" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -199,7 +191,39 @@
       <workItem from="1688259464817" duration="5684000" />
       <workItem from="1688736579456" duration="6327000" />
       <workItem from="1688775979557" duration="11664000" />
-      <workItem from="1688906831322" duration="1214000" />
+      <workItem from="1688906831322" duration="4422000" />
+      <workItem from="1688990876523" duration="1186000" />
+      <workItem from="1689077218448" duration="3646000" />
+      <workItem from="1689162317760" duration="1188000" />
+      <workItem from="1689249725529" duration="3753000" />
+      <workItem from="1689334733695" duration="7269000" />
+      <workItem from="1689378981282" duration="4317000" />
+      <workItem from="1689386011710" duration="769000" />
+      <workItem from="1689414592212" duration="9989000" />
+      <workItem from="1689464590061" duration="5279000" />
+      <workItem from="1689484148865" duration="869000" />
+      <workItem from="1689510687762" duration="4094000" />
+      <workItem from="1689595322749" duration="3110000" />
+      <workItem from="1689689740354" duration="797000" />
+      <workItem from="1689781037986" duration="405000" />
+      <workItem from="1689810527455" duration="599000" />
+      <workItem from="1689948500396" duration="652000" />
+      <workItem from="1689985631013" duration="922000" />
+      <workItem from="1690021855596" duration="91000" />
+      <workItem from="1690022143818" duration="19000" />
+      <workItem from="1690076985541" duration="1492000" />
+      <workItem from="1692714424974" duration="903000" />
+      <workItem from="1692790597604" duration="586000" />
+      <workItem from="1695561455758" duration="934000" />
+      <workItem from="1705113093827" duration="151000" />
+      <workItem from="1711087886761" duration="158000" />
+      <workItem from="1711944984764" duration="2388000" />
+      <workItem from="1711979468594" duration="687000" />
+      <workItem from="1712325712145" duration="246000" />
+      <workItem from="1712503614331" duration="9000" />
+      <workItem from="1712570616827" duration="1807000" />
+      <workItem from="1712806141674" duration="636000" />
+      <workItem from="1761560391460" duration="3079000" />
     </task>
     <servers />
   </component>
